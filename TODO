@@ -1,0 +1,5 @@
+* add better authentication
+* evaluate need for workers
+* upload to github once closed-testing is complete
+* fail2ban-monitor: do not propagate fail2bancluster jail bans (although this could be usedful in some scenarios)?
+* fail2ban-subscriber: add NOBLOCK, to fix thread-stop issue

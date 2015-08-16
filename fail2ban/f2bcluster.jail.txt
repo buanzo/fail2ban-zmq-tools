@@ -1,0 +1,15 @@
+# You have to add this jail to your fail2ban's jail.conf
+# as well as the filter file (located in this same directory) to your
+# fail2ban's filter.d dir.
+# Tweak to your desires.
+# Remember, this jail and the filter were designed for the first release of
+# fail2ban-zmq-tools aka fail2ban-cluster.
+# So, feel free to make lots of changes.
+
+[fail2bancluster]
+enabled = true
+port = 22,443,80,25,110,143,3128,11443
+protocol = tcp
+filter = fail2bancluster
+logpath = /var/log/auth.log
+maxretry = 1

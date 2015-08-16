@@ -1,0 +1,10 @@
+Welcome to the first release of fail2ban-zmq-tools, also known as
+fail2ban-cluster.
+
+I, buanzo, am running the fail2ban-publisher on f2bcluster.buanzo.org
+You will need to mail me (buanzo@buanzo.com.ar) to obtain a TOKEN (see
+fail2ban-cluster.conf for token configuration for [monitor]).
+
+If you rather run your own Publisher instance, just create a token, and
+configure it on your fail2ban-cluster.conf [publisher] section, then use
+that token in every Monitor configuration.

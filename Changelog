@@ -1,0 +1,20 @@
+ChangeLog
+
+2015-08-11 - Added logfile truncation/rotation to fail2ban-monitor
+             Added incoming message validation to subscriber and publisher
+             Added equal-hostname checking for subscriber (to avoid acting
+             on own messages)
+2015-08-10 - Package is released to test-group, f2bmqc.buanzo.org access is
+             granted per-request. Credentials and details arranged via email
+             to buanzo@buanzo.com.ar.
+2015-08-07 - fail2ban-mq-cluster Client gets its own configuration section,
+             allowing to specify address of f2b-mq-cluster Server, auth
+             creds, and working model (fail2ban-client ban/unban, or log
+             writing for f2b processing)
+2015-07-31 - Added /simple/ authentication layer to fail2ban-mq-cluster Server
+             and fail2ban-mq-cluster Monitor.
+2015-07-30 - Started preparing package for closed-testing with interested
+             parties from fail2ban-users and other members of infosec
+             community. configuration parsing added.
+2015-07-29 - Working PoC - Sent announce to fail2ban-users
+2015-07-28 - Started coding fail2ban-mq-cluster PoC

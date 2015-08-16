@@ -1,0 +1,19 @@
+Description of files in fail2ban-zmq-tools:
+
+Changelog: ChangeLog and Roadmap
+FILES: This file
+NOTES: Miscelaneous Information
+TODO: Things to do
+README: Installation and configuration instructions
+daemon.py: class for daemonizing - see http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+fail2ban-cluster.conf: Main configuration files. Includes sections for Monitor, Publisher and Subscriber.
+fail2ban-monitor.py: Monitors fail2ban.log for Bans/Unbans, and sends those details to Publisher.
+fail2ban-publisher.py: Receives messages from Monitor, and broadcasts them to Subscribers.
+fail2ban-subscriber.py: Subscribes to the Publisher. Received ban/unban information is then used appropiately.
+monitor.py: Implements the Monitor class, instantiated from fail2ban-monitor.py
+subscriber.py: Implements the Subscriber class, instantiated from fail2ban-subscriber.py
+configparsing.py: Implements the ConfigParsing class (off python3's configparser)
+utils.py: Implements the f2bcUtils class, with general utilities (ipv4 IP validation, etc)
+
+fail2ban/fail2bancluster.conf: filter.d file for fail2ban, to be used with fail2ban-subscriber LOG action
+fail2ban/f2bcluster.jail.txt: example jail for fail2ban, to be used with fail2bancluster.conf filter

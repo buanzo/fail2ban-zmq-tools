@@ -1,0 +1,16 @@
+I would like to thank Cyril Jacquier, original author of fail2ban, for
+accepting me into the team, back when fail2ban stopped working because of
+Python version bumps everywhere.
+
+Then to Yaroslav Halchenko, who has an amazing love for fail2ban and the
+people around it. He always has a :) in his replies. You are awesome, man.
+
+And finally, to Harrison Johnson, for jumping on the fail2ban-cluster wagon
+and being the first contributor and first tester.
+
+THANK YOU ALL.
+
+Live long and prosper.
+
+
+Buanzo.
