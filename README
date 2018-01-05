@@ -1,5 +1,4 @@
 fail2ban-zmq-tools
-by Arturo 'Buanzo' Busleiman <buanzo@buanzo.com.ar>
 
 A set of python scripts to be run in parallel to an existing
 fail2ban installation to allow multiple instances of fail2ban running in
