@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Some general purpose utilities."""
 
 import socket

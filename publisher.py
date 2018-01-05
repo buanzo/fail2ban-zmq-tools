@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 import sys
 import os
@@ -60,8 +61,7 @@ class Publisher(threading.Thread):
                                invalid message. Replying NAK.")
                 continue
             # and if incoming token matches our defined token
-            if self.authenticate == "true"
-            and message.split('|')[0] != self.authtoken:
+            if self.authenticate == "true" and  message.split('|')[0] != self.authtoken:
                 self.zmqReplySock.send_string("NAK")
                 syslog.syslog("fail2ban-zmq-tools Publisher: \
                                invalid token. Replying NAK.")

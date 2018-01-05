@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # for configuration, please refer to fail2ban-cluster.conf
 import zmq
 import sys
